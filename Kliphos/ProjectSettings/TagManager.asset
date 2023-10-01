@@ -41,6 +41,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: BG - Mountains
+    uniqueID: 3655730071
+    locked: 0
+  - name: BG - Clouds Above
+    uniqueID: 1926309655
+    locked: 0
+  - name: BG - Clouds Below
+    uniqueID: 2344943523
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
