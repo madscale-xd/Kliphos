@@ -23,4 +23,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Win Screen 1.unity
     guid: dce7fef1962d7794d84750fcbf7b0304
+  - enabled: 1
+    path: Assets/Scenes/Level 2.unity
+    guid: d2a2008ec11556e4ba9430258fbca2ae
+  - enabled: 1
+    path: Assets/Scenes/Lose Screen 2.unity
+    guid: 71e20ba50d78d4d4880389ca902cac58
+  - enabled: 1
+    path: Assets/Scenes/Win Screen 2.unity
+    guid: 566e21bfd08287f4d9e2ca42fd676bcf
+  - enabled: 1
+    path: Assets/Scenes/Level 3.unity
+    guid: 23ff72d6b6ecc6c459e0e6b0fa6289cc
+  - enabled: 1
+    path: Assets/Scenes/Lose Screen 3.unity
+    guid: 771f5666f283ee44b8c41ab6084ce41c
+  - enabled: 1
+    path: Assets/Scenes/Win Screen 3.unity
+    guid: 9d5cea0222a4fad47aecec24c4a87b69
   m_configObjects: {}

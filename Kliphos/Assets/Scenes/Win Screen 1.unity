@@ -211,7 +211,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 223348137}
-  - component: {fileID: 223348136}
+  - component: {fileID: 223348138}
   m_Layer: 0
   m_Name: WinObj1
   m_TagString: Untagged
@@ -219,18 +219,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &223348136
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 223348135}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e65c41aac715da54bb5a8e80ec1adf5b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &223348137
 Transform:
   m_ObjectHideFlags: 0
@@ -246,6 +234,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &223348138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223348135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 787fb3c3592582e478ff8cbea4328595, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &507212053
 GameObject:
   m_ObjectHideFlags: 0
@@ -452,9 +452,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 223348136}
-        m_TargetAssemblyTypeName: Level1Restart, Assembly-CSharp
-        m_MethodName: RestartLevel
+      - m_Target: {fileID: 223348138}
+        m_TargetAssemblyTypeName: Level1Next, Assembly-CSharp
+        m_MethodName: NextLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -664,8 +664,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 223348136}
-        m_TargetAssemblyTypeName: Level1Restart, Assembly-CSharp
+      - m_Target: {fileID: 223348138}
+        m_TargetAssemblyTypeName: Level1Next, Assembly-CSharp
         m_MethodName: BackToSelect
         m_Mode: 1
         m_Arguments:
@@ -1057,9 +1057,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 223348136}
+      - m_Target: {fileID: 223348135}
         m_TargetAssemblyTypeName: Level1Restart, Assembly-CSharp
-        m_MethodName: BackToMenu
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

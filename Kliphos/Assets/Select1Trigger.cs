@@ -22,6 +22,16 @@ public class Select1Trigger : MonoBehaviour
         SceneManager.LoadScene("Level 1");
     }
 
+    public void StartLevel2()
+    {
+        SceneManager.LoadScene("Level 2");
+    }
+
+    public void StartLevel3()
+    {
+        SceneManager.LoadScene("Level 3");
+    }
+
     public void BackToMenu()
     {
         SceneManager.LoadScene("Start Menu");
