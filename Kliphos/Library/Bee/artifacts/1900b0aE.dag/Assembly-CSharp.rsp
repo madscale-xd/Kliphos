@@ -386,6 +386,7 @@
 "Assets/Level3Next.cs"
 "Assets/Level3Restart.cs"
 "Assets/MaidenMovement.cs"
+"Assets/PauseScript.cs"
 "Assets/Select1Trigger.cs"
 "Assets/Select2Trigger.cs"
 "Assets/StartScript.cs"
