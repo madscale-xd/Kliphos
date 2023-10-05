@@ -50,6 +50,15 @@ TagManager:
   - name: BG - Clouds Below
     uniqueID: 2344943523
     locked: 0
+  - name: BG - Clouds below 1
+    uniqueID: 3410163003
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Grass
+    uniqueID: 1238041311
+    locked: 0
+  - name: Cards
+    uniqueID: 2254804899
     locked: 0
