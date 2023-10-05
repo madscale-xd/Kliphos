@@ -14,43 +14,40 @@ public class PauseMenu : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void TogglePauseMenu()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (!pauseMenu.activeSelf)
         {
-            if (!pauseMenu.activeSelf)
-            {
-                pauseMenu.SetActive(true);
-                Time.timeScale = 0f;
+            pauseMenu.SetActive(true);
+            Time.timeScale = 0f;
 
-                // Deactivate up to five objects by disabling their BoxCollider2D components
-                foreach (var obj in objectsToDeactivate)
+            // Deactivate up to five objects by disabling their BoxCollider2D components
+            foreach (var obj in objectsToDeactivate)
+            {
+                if (obj != null)
                 {
-                    if (obj != null)
+                    BoxCollider2D collider = obj.GetComponent<BoxCollider2D>();
+                    if (collider != null)
                     {
-                        BoxCollider2D collider = obj.GetComponent<BoxCollider2D>();
-                        if (collider != null)
-                        {
-                            collider.enabled = false;
-                        }
+                        collider.enabled = false;
                     }
                 }
             }
-            else
-            {
-                pauseMenu.SetActive(false);
-                Time.timeScale = 1f;
+        }
+        else
+        {
+            pauseMenu.SetActive(false);
+            Time.timeScale = 1f;
 
-                // Activate the previously deactivated objects by enabling their BoxCollider2D components
-                foreach (var obj in objectsToDeactivate)
+            // Activate the previously deactivated objects by enabling their BoxCollider2D components
+            foreach (var obj in objectsToDeactivate)
+            {
+                if (obj != null)
                 {
-                    if (obj != null)
+                    BoxCollider2D collider = obj.GetComponent<BoxCollider2D>();
+                    if (collider != null)
                     {
-                        BoxCollider2D collider = obj.GetComponent<BoxCollider2D>();
-                        if (collider != null)
-                        {
-                            collider.enabled = true;
-                        }
+                        collider.enabled = true;
                     }
                 }
             }

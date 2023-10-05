@@ -22,6 +22,11 @@ public class StartScript : MonoBehaviour
         SceneManager.LoadScene("Level Choice 1");
     }
 
+    public void Options()
+    {
+        SceneManager.LoadScene("Options");
+    }
+
     public void Quit()
     {
         Application.Quit();
