@@ -1057,9 +1057,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 223348135}
-        m_TargetAssemblyTypeName: Level1Restart, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 223348138}
+        m_TargetAssemblyTypeName: Level1Next, Assembly-CSharp
+        m_MethodName: BackToMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
