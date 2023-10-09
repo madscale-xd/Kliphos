@@ -3,9 +3,17 @@ using UnityEngine;
 public class DragUIItem : MonoBehaviour
 {
     public GameObject objectToInstantiate; // Reference to the object prefab to be instantiated.
+    public float dragAlpha = 0.5f; // Alpha value when dragging.
 
     private bool isDragging = false;
     private Vector3 offset;
+    private Material objectMaterial; // Reference to the object's material.
+
+    private void Start()
+    {
+        // Get the material of the object (assuming it uses a Standard Shader).
+        objectMaterial = GetComponent<Renderer>().material;
+    }
 
     private void Update()
     {
@@ -27,6 +35,9 @@ public class DragUIItem : MonoBehaviour
 
         // Start dragging.
         isDragging = true;
+
+        // Set the object's transparency to the dragAlpha value.
+        SetObjectTransparency(dragAlpha);
     }
 
     private void OnMouseUp()
@@ -34,8 +45,18 @@ public class DragUIItem : MonoBehaviour
         // Stop dragging.
         isDragging = false;
 
+        // Set the object's transparency back to 1.0f (fully opaque).
+        SetObjectTransparency(1.0f);
+
         // Instantiate the objectToInstantiate prefab.
         Instantiate(objectToInstantiate, transform.position, Quaternion.identity);
         gameObject.SetActive(false);
+    }
+
+    private void SetObjectTransparency(float alphaValue)
+    {
+        Color newColor = objectMaterial.color;
+        newColor.a = alphaValue;
+        objectMaterial.color = newColor;
     }
 }

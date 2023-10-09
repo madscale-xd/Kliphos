@@ -387,6 +387,7 @@
 "Assets/Level 3 Scripts/Level3Restart.cs"
 "Assets/Level 3 Scripts/WinScript3.cs"
 "Assets/Movement Scripts/BruteMovement.cs"
+"Assets/Movement Scripts/CharAirCheck.cs"
 "Assets/Movement Scripts/DragUIItem.cs"
 "Assets/Movement Scripts/MaidenMovement.cs"
 "Assets/PauseScript.cs"
