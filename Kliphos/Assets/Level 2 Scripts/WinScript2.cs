@@ -7,6 +7,7 @@ public class WinScript2 : MonoBehaviour
 {
     public GameObject startPoint;
     public GameObject Player;
+    public LevelTracker level;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +24,7 @@ public class WinScript2 : MonoBehaviour
     {
         if (gate.gameObject.CompareTag("Citizen"))
         {
+            level.UpdateLevel(2);
             SceneManager.LoadScene("Win Screen 2");
         }
     }

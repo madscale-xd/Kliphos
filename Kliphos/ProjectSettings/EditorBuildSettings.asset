@@ -15,6 +15,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Level Choice 2.unity
     guid: 3bb871c54a711b74eaac043353a04ff4
   - enabled: 1
+    path: Assets/Scenes/Level Choice 4.unity
+    guid: 9c7d5abc99cc41b4bb2f9e76fc8a0c9d
+  - enabled: 1
+    path: Assets/Scenes/Level Choice 3.unity
+    guid: fdb8809dfdae6f942ac5d03de17d8bcd
+  - enabled: 1
     path: Assets/Scenes/Level 1.unity
     guid: 177bd0499e89b7740af2f345d24d8142
   - enabled: 1
@@ -42,6 +48,72 @@ EditorBuildSettings:
     path: Assets/Scenes/Win Screen 3.unity
     guid: 9d5cea0222a4fad47aecec24c4a87b69
   - enabled: 1
+    path: Assets/Scenes/Level 4.unity
+    guid: 6223083d5acaaf3429b86dc481c8b6ee
+  - enabled: 1
+    path: Assets/Scenes/Lose Screen 4.unity
+    guid: 8bec8e54edc8aae4483a1b8ad7023451
+  - enabled: 1
+    path: Assets/Scenes/Win Screen 4.unity
+    guid: 00f440fb941a03c4791bf18924bb2be4
+  - enabled: 1
+    path: Assets/Scenes/Level 5.unity
+    guid: 848e8927e25658347ac567fe5acb7d38
+  - enabled: 1
+    path: Assets/Scenes/Lose Screen 5.unity
+    guid: f72f33202f160fa458f673fdbf1e9f3b
+  - enabled: 1
+    path: Assets/Scenes/Win Screen 5.unity
+    guid: 46483297439616e42a9eee373df31fec
+  - enabled: 1
+    path: Assets/Scenes/Level 6.unity
+    guid: 72bc53d36abad994199b57abe76730c0
+  - enabled: 1
+    path: Assets/Scenes/Lose Screen 6.unity
+    guid: fd232978e2461a840a8a6b69ffe22dc3
+  - enabled: 1
+    path: Assets/Scenes/Win Screen 6.unity
+    guid: abf5bcc0b6594fa4091fa97217d32d28
+  - enabled: 1
+    path: Assets/Scenes/Level 7.unity
+    guid: d7a2a6b4ecb806c4a8bdbfc485206487
+  - enabled: 1
+    path: Assets/Scenes/Lose Screen 7.unity
+    guid: bbfa93f76447c924f9b9dccf9deba5fc
+  - enabled: 1
+    path: Assets/Scenes/Win Screen 7.unity
+    guid: 5cc34281a6e314943948efba35e74fc3
+  - enabled: 1
+    path: Assets/Scenes/Level 8.unity
+    guid: 9cabaeac469a6c44495023f1ccd6d632
+  - enabled: 1
+    path: Assets/Scenes/Lose Screen 8.unity
+    guid: c6080d594c1a1cb479e6e3f76033fb41
+  - enabled: 1
+    path: Assets/Scenes/Win Screen 8.unity
+    guid: 7aa05815f160e5c418216a988d2bbe05
+  - enabled: 1
+    path: Assets/Scenes/Level 9.unity
+    guid: e4a917a03e5e7c240bb0122ff62e98ef
+  - enabled: 1
+    path: Assets/Scenes/Lose Screen 9.unity
+    guid: 6920687fdf2a89443a55ce8727e12ca2
+  - enabled: 1
+    path: Assets/Scenes/Win Screen 9.unity
+    guid: 658a0aed08dce2f4b82cc22435144ca7
+  - enabled: 1
+    path: Assets/Scenes/Level 10.unity
+    guid: cf22370f95e4aa54281d5654f70ccebb
+  - enabled: 1
+    path: Assets/Scenes/Lose Screen 10.unity
+    guid: c8d3a164fbaf59c459e01ba4bf004c00
+  - enabled: 1
+    path: Assets/Scenes/Win Screen 10.unity
+    guid: 84265e7c2cb4fe1458ab8669014c8f6a
+  - enabled: 1
+    path: Assets/Scenes/EndOfDemo.unity
+    guid: 094e3a64931d187498bdd3701acecf32
+  - enabled: 1
     path: Assets/Scenes/Options.unity
-    guid: 47c1bd2555788af4a8d777c984662819
+    guid: ac0723e389334ba4c8e5bfa73de56981
   m_configObjects: {}

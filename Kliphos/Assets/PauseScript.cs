@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PauseMenu : MonoBehaviour
+public class PauseScript : MonoBehaviour
 {
     public GameObject pauseMenu;
     public GameObject[] objectsToDeactivate; // An array to hold up to five objects to deactivate

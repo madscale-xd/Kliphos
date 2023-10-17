@@ -227,6 +227,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startPoint: {fileID: 0}
   Player: {fileID: 0}
+  level: {fileID: 0}
 --- !u!1 &268318767
 GameObject:
   m_ObjectHideFlags: 0
@@ -310,8 +311,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1186305850}
-        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+      - m_Target: {fileID: 1186305855}
+        m_TargetAssemblyTypeName: PauseScript1, Assembly-CSharp
         m_MethodName: RestartLevel
         m_Mode: 1
         m_Arguments:
@@ -822,9 +823,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1186305850}
-        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
-        m_MethodName: BackToSelect1
+      - m_Target: {fileID: 1186305855}
+        m_TargetAssemblyTypeName: PauseScript1, Assembly-CSharp
+        m_MethodName: BackToSelect2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1502,7 +1503,7 @@ GameObject:
   - component: {fileID: 715872539}
   - component: {fileID: 715872538}
   - component: {fileID: 715872537}
-  - component: {fileID: 715872540}
+  - component: {fileID: 715872541}
   m_Layer: 0
   m_Name: Win obj
   m_TagString: gate
@@ -1616,13 +1617,13 @@ Transform:
   m_GameObject: {fileID: 715872536}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.07, y: 0.33, z: 0}
+  m_LocalPosition: {x: 8.27, y: 0.33, z: 0}
   m_LocalScale: {x: 1.3412, y: 1.3981, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &715872540
+--- !u!114 &715872541
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1631,11 +1632,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 715872536}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66f2fb556aadd32499d1fa045c1c6e4e, type: 3}
+  m_Script: {fileID: 11500000, guid: 598e046302471374bbc497a4fad9efd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   startPoint: {fileID: 0}
   Player: {fileID: 0}
+  level: {fileID: 1351745162}
 --- !u!1 &729122076
 GameObject:
   m_ObjectHideFlags: 0
@@ -2131,8 +2133,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1186305850}
-        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+      - m_Target: {fileID: 1186305855}
+        m_TargetAssemblyTypeName: PauseScript1, Assembly-CSharp
         m_MethodName: TogglePauseMenu
         m_Mode: 1
         m_Arguments:
@@ -2528,7 +2530,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1180736036}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 356ecb3c3b3d97844872823beca884bf, type: 3}
+  m_Script: {fileID: 11500000, guid: e5ef3f9c45c084e46b1c6e7c7fbd06d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   startPoint: {fileID: 0}
@@ -2545,7 +2547,7 @@ GameObject:
   - component: {fileID: 1186305853}
   - component: {fileID: 1186305852}
   - component: {fileID: 1186305851}
-  - component: {fileID: 1186305850}
+  - component: {fileID: 1186305855}
   m_Layer: 5
   m_Name: PauseMenu
   m_TagString: Untagged
@@ -2553,23 +2555,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1186305850
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1186305849}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f170c4caac741147a4c7f7a451f2f66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseMenu: {fileID: 410234922}
-  objectsToDeactivate:
-  - {fileID: 858624895}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!114 &1186305851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2653,6 +2638,23 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1186305855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186305849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea61a41fab86e4c43bd996e778561e61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 410234922}
+  objectsToDeactivate:
+  - {fileID: 858624895}
+  - {fileID: 1487954032}
+  - {fileID: 0}
 --- !u!1 &1194732865
 GameObject:
   m_ObjectHideFlags: 0
@@ -2769,6 +2771,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1351745161}
   - component: {fileID: 1351745160}
+  - component: {fileID: 1351745162}
   m_Layer: 0
   m_Name: Win pillars
   m_TagString: Untagged
@@ -2843,6 +2846,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1351745162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351745159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79c05849d14ff184b94872692b4c8f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  userLevel: 4
 --- !u!1 &1487954032
 GameObject:
   m_ObjectHideFlags: 0
@@ -3230,7 +3246,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1640251046}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 356ecb3c3b3d97844872823beca884bf, type: 3}
+  m_Script: {fileID: 11500000, guid: e5ef3f9c45c084e46b1c6e7c7fbd06d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   startPoint: {fileID: 0}
@@ -3836,8 +3852,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1186305850}
-        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+      - m_Target: {fileID: 1186305855}
+        m_TargetAssemblyTypeName: PauseScript1, Assembly-CSharp
         m_MethodName: BackToMenu
         m_Mode: 1
         m_Arguments:
