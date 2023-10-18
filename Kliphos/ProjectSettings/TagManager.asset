@@ -57,6 +57,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Character
+    uniqueID: 1428958465
+    locked: 0
   - name: Grass
     uniqueID: 1238041311
     locked: 0
