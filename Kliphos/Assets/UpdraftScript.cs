@@ -48,7 +48,7 @@ public class UpdraftScript : MonoBehaviour
                 forceDirection.Normalize();
 
                 // Apply the force to the object above using 2D physics.
-                hitRigidbody.AddForce(forceDirection * forceMagnitude, ForceMode2D.Impulse);
+                hitRigidbody.AddForce(Vector2.up * forceMagnitude, ForceMode2D.Impulse);
             }
         }
 
