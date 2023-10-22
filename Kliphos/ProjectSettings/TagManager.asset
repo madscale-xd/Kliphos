@@ -10,6 +10,8 @@ TagManager:
   - platform
   - creature2
   - minotrig
+  - gorzone
+  - gorgon
   layers:
   - Default
   - TransparentFX

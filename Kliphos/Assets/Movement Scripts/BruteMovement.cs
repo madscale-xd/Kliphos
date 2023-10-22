@@ -26,11 +26,11 @@ public class BruteMovement : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("creature2") && hp>0)
+        if ((other.gameObject.CompareTag("creature2") || other.gameObject.CompareTag("gorzone")) && hp>0)
         {
             hp--;
         }
-        else if(other.gameObject.CompareTag("creature2") && hp == 0)
+        else if((other.gameObject.CompareTag("creature2") || other.gameObject.CompareTag("gorzone")) && hp == 0)
         {
             if (SceneManager.GetActiveScene().name.Equals("Level 4"))
             {

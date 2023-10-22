@@ -33,7 +33,7 @@ public class MinotaurMovement : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D mino)
     {
-        if (mino.gameObject.CompareTag("Citizen"))
+        if (mino.gameObject.CompareTag("Citizen") || mino.gameObject.CompareTag("gorzone"))
         {
             gameObject.SetActive(false);
         }

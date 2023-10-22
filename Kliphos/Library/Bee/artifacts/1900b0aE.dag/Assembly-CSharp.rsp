@@ -419,6 +419,8 @@
 "Assets/Movement Scripts/BruteMovement.cs"
 "Assets/Movement Scripts/CharAirCheck.cs"
 "Assets/Movement Scripts/DragUIItem.cs"
+"Assets/Movement Scripts/GorgonMovement.cs"
+"Assets/Movement Scripts/GorgonZone.cs"
 "Assets/Movement Scripts/HarpyMovement.cs"
 "Assets/Movement Scripts/HarpyTrigger.cs"
 "Assets/Movement Scripts/MaidenMovement.cs"

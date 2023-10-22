@@ -36,7 +36,7 @@ public class HarpyMovement : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D mino)
     {
-        if (mino.gameObject.CompareTag("Citizen") || mino.gameObject.CompareTag("platform"))
+        if (mino.gameObject.CompareTag("Citizen") || mino.gameObject.CompareTag("platform") || mino.gameObject.CompareTag("gorzone"))
         {
             gameObject.SetActive(false);
         }
