@@ -8,6 +8,8 @@ TagManager:
   - creature
   - gate
   - platform
+  - creature2
+  - minotrig
   layers:
   - Default
   - TransparentFX
