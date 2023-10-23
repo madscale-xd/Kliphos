@@ -21,7 +21,7 @@ public class DeathScript8 : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D creature)
     {
-        if (creature.gameObject.CompareTag("Citizen"))
+        if (creature.gameObject.CompareTag("Citizen") || creature.gameObject.CompareTag("gorgon"))
         {
             SceneManager.LoadScene("Lose Screen 8");
         }

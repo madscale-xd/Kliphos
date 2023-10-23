@@ -64,5 +64,9 @@ public class GorgonMovement : MonoBehaviour
                 sc.callDeath10();
             }
         }
+        if (other.gameObject.CompareTag("gate"))
+        {
+            gameObject.SetActive(false);
+        }
     }
 }

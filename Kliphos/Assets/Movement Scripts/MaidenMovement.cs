@@ -61,5 +61,9 @@ public class MaidenMovement : MonoBehaviour
                 sc.callDeath10();
             }
         }
+        if (other.gameObject.CompareTag("gate"))
+        {
+            gameObject.SetActive(false);
+        }
     }
 }
