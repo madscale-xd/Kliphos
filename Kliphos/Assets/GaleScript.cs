@@ -67,6 +67,8 @@ public class GaleScript : MonoBehaviour
                     hitRigidbody.AddForce(Vector2.right * forceMagnitude, ForceMode2D.Impulse);
                 }
             }
+            // Deactivate the instance of the prefab.
+            gameObject.SetActive(false);
         }
 
         // Update the last position.

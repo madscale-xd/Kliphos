@@ -50,6 +50,9 @@ public class UpdraftScript : MonoBehaviour
 
                 // Apply the force to the object above using 2D physics.
                 hitRigidbody.AddForce(Vector2.up * forceMagnitude, ForceMode2D.Impulse);
+
+                // Deactivate the instance of the prefab.
+                gameObject.SetActive(false);
             }
         }
 

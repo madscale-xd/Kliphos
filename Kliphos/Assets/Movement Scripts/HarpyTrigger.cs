@@ -20,7 +20,7 @@ public class HarpyTrigger : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         // Check if the colliding object is tagged as "citizen"
-        if (other.CompareTag("Citizen"))
+        if (other.CompareTag("Citizen") || other.CompareTag("gorgon"))
         {
             // Set the "move" variable of the MinotaurMovement script to true
             har.move = true;
