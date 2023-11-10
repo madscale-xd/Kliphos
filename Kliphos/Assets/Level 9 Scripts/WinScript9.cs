@@ -32,8 +32,8 @@ public class WinScript9 : MonoBehaviour
             }
             else
             {
-                level.UpdateLevel(8);
-                SceneManager.LoadScene("Win Screen 8");
+                level.UpdateLevel(9);
+                SceneManager.LoadScene("Win Screen 9");
             }
         }
     }

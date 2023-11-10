@@ -12,6 +12,7 @@ TagManager:
   - minotrig
   - gorzone
   - gorgon
+  - card
   layers:
   - Default
   - TransparentFX
@@ -69,4 +70,7 @@ TagManager:
     locked: 0
   - name: Cards
     uniqueID: 2254804899
+    locked: 0
+  - name: Deckbuilder
+    uniqueID: 3234734225
     locked: 0
