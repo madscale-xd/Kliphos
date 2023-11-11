@@ -23,12 +23,26 @@ public class LevelTracker : MonoBehaviour
     {
         if (amount < userLevel)
         {
-
+            // You can add additional logic here if needed
         }
         else
         {
             userLevel = amount;
         }
         SaveProgress();
+    }
+
+    public int ReturnLevel()
+    {
+        // Return the current level saved in PlayerPrefs
+        return PlayerPrefs.GetInt("UserProgress", 0);
+    }
+
+    public void ResetLevel()
+    {
+        // Set the current level saved in PlayerPrefs to 0
+        PlayerPrefs.SetInt("UserProgress", 0);
+        PlayerPrefs.Save(); // This line is optional, but ensures data is saved immediately
+        userLevel = 0; // Also update the in-memory userLevel variable
     }
 }

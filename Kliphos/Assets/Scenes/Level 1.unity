@@ -1474,7 +1474,7 @@ GameObject:
   - component: {fileID: 514095065}
   - component: {fileID: 514095064}
   m_Layer: 5
-  m_Name: Canvas (1)
+  m_Name: DeckBuilderCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2060,6 +2060,7 @@ GameObject:
   - component: {fileID: 637287596}
   - component: {fileID: 637287597}
   - component: {fileID: 637287598}
+  - component: {fileID: 637287599}
   m_Layer: 0
   m_Name: Gale
   m_TagString: Untagged
@@ -2195,6 +2196,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.32, y: 1.62}
   m_EdgeRadius: 0
+--- !u!114 &637287599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637287594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fd9ea7cbbb3d7b449d76b89deb00c27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: {fileID: 1351745162}
 --- !u!1 &669512228
 GameObject:
   m_ObjectHideFlags: 0
@@ -2207,6 +2221,7 @@ GameObject:
   - component: {fileID: 669512230}
   - component: {fileID: 669512231}
   - component: {fileID: 669512232}
+  - component: {fileID: 669512233}
   m_Layer: 0
   m_Name: Updraft2
   m_TagString: Untagged
@@ -2342,6 +2357,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.92, y: 3.84}
   m_EdgeRadius: 0
+--- !u!114 &669512233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669512228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f38185a9edd5e274c8c5c033b3cc9650, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: {fileID: 1351745162}
 --- !u!1 &715872536
 GameObject:
   m_ObjectHideFlags: 0
@@ -4273,6 +4301,7 @@ GameObject:
   - component: {fileID: 1577166382}
   - component: {fileID: 1577166384}
   - component: {fileID: 1577166383}
+  - component: {fileID: 1577166385}
   m_Layer: 0
   m_Name: Updraft
   m_TagString: Untagged
@@ -4392,7 +4421,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -4408,6 +4437,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.92, y: 3.84}
   m_EdgeRadius: 0
+--- !u!114 &1577166385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1577166380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f38185a9edd5e274c8c5c033b3cc9650, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: {fileID: 1351745162}
 --- !u!1 &1607515989
 GameObject:
   m_ObjectHideFlags: 0
@@ -4661,6 +4703,7 @@ GameObject:
   - component: {fileID: 1625597349}
   - component: {fileID: 1625597350}
   - component: {fileID: 1625597351}
+  - component: {fileID: 1625597352}
   m_Layer: 0
   m_Name: Gale2
   m_TagString: Untagged
@@ -4796,6 +4839,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.25, y: 2.31}
   m_EdgeRadius: 0
+--- !u!114 &1625597352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625597347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fd9ea7cbbb3d7b449d76b89deb00c27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: {fileID: 1351745162}
 --- !u!1 &1633321230
 GameObject:
   m_ObjectHideFlags: 0

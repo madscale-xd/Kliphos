@@ -10,7 +10,6 @@ public class PauseScript3 : MonoBehaviour
 
     void Start()
     {
-        Time.timeScale = 1f;
     }
 
     // Update is called once per frame

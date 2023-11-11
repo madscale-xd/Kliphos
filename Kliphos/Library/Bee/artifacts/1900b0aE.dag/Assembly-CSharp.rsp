@@ -377,6 +377,7 @@
 "Assets/ColliderPause.cs"
 "Assets/Deckbuilder.cs"
 "Assets/DeckPause.cs"
+"Assets/GaleDisabler.cs"
 "Assets/GaleScript.cs"
 "Assets/Level 1 Scripts/DeathScript1.cs"
 "Assets/Level 1 Scripts/Level1Next.cs"
@@ -438,6 +439,7 @@
 "Assets/Select2Trigger.cs"
 "Assets/StartScript.cs"
 "Assets/StartScript1.cs"
+"Assets/UpdraftDisabler.cs"
 "Assets/UpdraftScript.cs"
 -langversion:9.0
 
