@@ -8,6 +8,7 @@ public class WinScript6 : MonoBehaviour
     public GameObject startPoint;
     public GameObject Player;
     public LevelTracker level;
+    public KeyShard key;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +27,10 @@ public class WinScript6 : MonoBehaviour
         if (gate.gameObject.CompareTag("Citizen"))
         {
             level.UpdateLevel(6);
+            if (key.keyAcquired == true)
+            {
+                PlayerPrefs.SetInt("key6", 1);
+            }
             SceneManager.LoadScene("Win Screen 6");
         }
     }

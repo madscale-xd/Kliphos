@@ -28,7 +28,7 @@ public class GorgonZone : MonoBehaviour
         {
             gameObject.SetActive(false);
         }
-        if (gorZon.gameObject.CompareTag("creature"))
+        if (gorZon.gameObject.CompareTag("gate"))
         {
             gameObject.SetActive(false);
         }

@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.U2D.Aseprite;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,6 +9,7 @@ public class WinScript7 : MonoBehaviour
     public GameObject Player;
     public LevelTracker level;
     private int passCount = 1;
+    public KeyShard key;
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +34,10 @@ public class WinScript7 : MonoBehaviour
             else
             {
                 level.UpdateLevel(7);
+                if (key.keyAcquired == true)
+                {
+                    PlayerPrefs.SetInt("key7", 1);
+                }
                 SceneManager.LoadScene("Win Screen 7");
             }
         }

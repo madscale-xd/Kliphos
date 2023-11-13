@@ -9,6 +9,7 @@ public class WinScript8 : MonoBehaviour
     public GameObject Player;
     public LevelTracker level;
     private int passCount = 1;
+    public KeyShard key;
 
     // Start is called before the first frame update
     void Start()
@@ -33,6 +34,10 @@ public class WinScript8 : MonoBehaviour
             else
             {
                 level.UpdateLevel(8);
+                if (key.keyAcquired == true)
+                {
+                    PlayerPrefs.SetInt("key8", 1);
+                }
                 SceneManager.LoadScene("Win Screen 8");
             }
         }
