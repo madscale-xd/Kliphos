@@ -5,7 +5,7 @@ public class HarpyMovement : MonoBehaviour
 {
     public float speed = 5f; // Adjust this speed as needed
     public bool move = false; // Boolean to control movement
-
+    private Animator animator;
     private Rigidbody2D rb;
 
     void Start()
@@ -17,6 +17,8 @@ public class HarpyMovement : MonoBehaviour
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
 
         rb.isKinematic = true;
+
+        animator = GetComponent<Animator>();
     }
 
     void FixedUpdate()
@@ -27,6 +29,7 @@ public class HarpyMovement : MonoBehaviour
             Vector2 movement = new Vector2(0, speed);
             rb.velocity = movement;
             rb.isKinematic = false;
+            animator.SetBool("Move", true);
         }
         else
         {

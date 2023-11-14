@@ -8,6 +8,7 @@ public class CharAirCheck : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
+        isInAir = false;
     }
 
     void Update()

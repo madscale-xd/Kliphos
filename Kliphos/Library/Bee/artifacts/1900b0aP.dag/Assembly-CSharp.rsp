@@ -381,6 +381,7 @@
 "Assets/PauseScript1.cs"
 "Assets/PauseScript2.cs"
 "Assets/PauseScript3.cs"
+"Assets/Reverse.cs"
 "Assets/SceneCaller.cs"
 "Assets/Select1Trigger.cs"
 "Assets/Select2Trigger.cs"

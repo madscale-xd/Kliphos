@@ -7,8 +7,10 @@ public class GaleScript : MonoBehaviour
     public Vector2 forceDirection = Vector2.up; // The direction of the force in 2D.
     public bool applyToRight = true;
 
+
     private Rigidbody2D rb;
     private Vector2 lastPosition; // Store the last position of the object above.
+    private SpriteRenderer spriteRenderer;
 
     void Start()
     {
@@ -19,6 +21,14 @@ public class GaleScript : MonoBehaviour
         if (rb == null)
         {
             Debug.LogError("Rigidbody2D component not found on this GameObject.");
+        }
+
+        spriteRenderer = GetComponent<SpriteRenderer>();
+
+        // Check if the SpriteRenderer component exists.
+        if (spriteRenderer == null)
+        {
+            Debug.LogError("SpriteRenderer component not found on this GameObject.");
         }
 
         // Initialize the last position to the current position.
@@ -80,6 +90,8 @@ public class GaleScript : MonoBehaviour
         if (Input.GetMouseButtonDown(1)) // 1 corresponds to the right mouse button.
         {
             applyToRight = !applyToRight;
+
+            spriteRenderer.flipX = !applyToRight;
         }
     }
 }

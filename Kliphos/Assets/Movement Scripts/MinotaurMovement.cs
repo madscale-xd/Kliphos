@@ -5,7 +5,7 @@ public class MinotaurMovement : MonoBehaviour
 {
     public float speed = 5f; // Adjust this speed as needed
     public bool move = false; // Boolean to control movement
-
+    private Animator animator;
     private Rigidbody2D rb;
 
     void Start()
@@ -15,6 +15,8 @@ public class MinotaurMovement : MonoBehaviour
 
         // Ensure the Rigidbody2D does not rotate around the Z-axis
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+
+        animator = GetComponent<Animator>();
     }
 
     void FixedUpdate()
@@ -24,6 +26,7 @@ public class MinotaurMovement : MonoBehaviour
             // Move the GameObject to the right using its Rigidbody2D
             Vector2 movement = new Vector2(speed, 0);
             rb.velocity = movement;
+            animator.SetBool("Move",true);
         }
         else
         {
